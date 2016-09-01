@@ -1,3 +1,5 @@
+require 'elasticsearch/extensions/backup'
+
 Model.new(:elasticsearch, 'Elasticsearch Backup') do
   database Elasticsearch do |db|
     db.url     = ENV['ELASTIC_URL']
